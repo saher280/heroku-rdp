@@ -11,7 +11,7 @@ RUN apt-get -qqy update \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
-RUN echo -e "$AkuhNet123\n$AkuhNet123\n" | sudo passwd
+RUN apt install wget -y
 RUN cp /usr/share/novnc/vnc.html /usr/share/novnc/index.html
 
 COPY scripts/* /opt/bin/
@@ -47,7 +47,6 @@ RUN apt-get -qqy update \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
     && apt install python -y \
-    && apt install wget -y \
     && apt install xrdp -y \
     && apt install unzip \
     && apt-get autoclean \
