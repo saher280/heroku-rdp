@@ -1,0 +1,14 @@
+{
+    "name": "Heroku RDP",
+    "description": "Deploy noVNC",
+    "keywords": [
+        "VNC",
+        "Docker",
+        "noVNC"
+    ],
+    "env": {},
+    "website": "",
+    "repository": "https://github.com/akuhnet/heroku-rdp.git",
+    "logo": "https://raw.githubusercontent.com//akuhnet/heroku-rdp/1d5017e36008ee4dc1acfa4131b2582444ced32a/Akuh.net.png?token=ATNFCXPNIVNZ32VPI2CIL7LBJ3BJE",
+    "stack": "container"
+}
