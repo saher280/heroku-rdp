@@ -46,10 +46,10 @@ RUN apt-get -qqy update \
     && apt-add-repository ppa:obsproject/obs-studio \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
-    && apt install python \
-	&& apt install wget \
-	&& apt install xrdp \
-	&& apt install unzip \
+    && apt install python -y \
+    && apt install wget -y \
+    && apt install xrdp -y \
+    && apt install unzip \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
