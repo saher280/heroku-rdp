@@ -88,4 +88,4 @@ RUN apt-get update -qqy \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
-RUN echo -e "$123\n$123\n" | sudo passwd
+RUN echo -e "$akuhnet\n$akuhnet\n" | sudo passwd
