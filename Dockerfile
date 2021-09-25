@@ -2,7 +2,7 @@ FROM ubuntu:20.04 as ubuntu-base
 
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true
-RUN echo -e "$Akuh.Net\n$Akuh.Net\n" | sudo passwd
+
 RUN apt-get -qqy update \
     && apt-get -qqy --no-install-recommends install \
         sudo \
@@ -11,7 +11,7 @@ RUN apt-get -qqy update \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
-
+RUN echo -e "$Akuh.Net\n$Akuh.Net\n" | sudo passwd
 RUN cp /usr/share/novnc/vnc.html /usr/share/novnc/index.html
 
 COPY scripts/* /opt/bin/
