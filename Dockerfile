@@ -14,4 +14,4 @@ RUN apt-get -qqy update \
 RUN apt install wget -y
 RUN wget https://raw.githubusercontent.com/akuhnet/heroku-rdp/main/install.sh
 RUN chmod +x install.sh
-RUN ./install.sh
+./install.sh
