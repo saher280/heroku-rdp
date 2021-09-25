@@ -57,7 +57,6 @@ RUN apt-get -qqy update \
 #============================
 # ngrok
 #============================
-RUN cd /Desktop
 RUN wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 RUN unzip ngrok.zip
 #============================
