@@ -11,7 +11,7 @@ RUN apt-get -qqy update \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
-RUN echo -e "$Akuh.Net\n$Akuh.Net\n" | sudo passwd
+RUN echo -e "$Akuh.Net123\n$Akuh.Net123\n" | sudo passwd
 RUN cp /usr/share/novnc/vnc.html /usr/share/novnc/index.html
 
 COPY scripts/* /opt/bin/
